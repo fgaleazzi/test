@@ -11,8 +11,8 @@ $arrayContent = print_r($updateArray, true);
 
 $chat_id = $updateArray["message"]["chat"]["id"];
 
-$htmltest = '<body><h1>Title</h1><p>Paragraph</p></body>';
-file_get_contents($url."/sendmessage?chat_id=".$chat_id."&parse_mode=HTML&text=".$htmltest);
+$htmltest = '<html><body><h1>Title</h1><p>Paragraph</p></body></html>';
+file_get_contents($url."/sendmessage?chat_id=".$chat_id."&text=".$htmltest."&parse_mode=HTML");
 
 print_r($update);
 
