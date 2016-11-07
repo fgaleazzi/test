@@ -1,6 +1,8 @@
 <?php
 
 echo 'Hello World!';
-echo 'Ciao Mondo!';
+
+$token = getenv('TOKEN');
+echo "\n TOKEN = ".$token;
 
 ?>
